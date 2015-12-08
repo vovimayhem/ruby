@@ -4,7 +4,7 @@ MAINTAINER Roberto Quintanilla<roberto.quintanilla@gmail.com>
 # 1: Install Qt and libqt5webkit5-dev, which are dependencies to the gem 'capybara-webkit':
 RUN set -ex \
   && apt-get update \
-  && apt-get install -y --no-install-recommends qt5-default libqt5webkit5-dev \
+  && apt-get install -y --no-install-recommends qt5-default libqt5webkit5-dev htop \
   && rm -rf /var/lib/apt/lists/*
 
 # 2: Run all at the same layer (run command):
